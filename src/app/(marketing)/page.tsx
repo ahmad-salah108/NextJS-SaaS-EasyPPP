@@ -78,13 +78,13 @@ export default function HomePage() {
         <h2 className="text-4xl text-center text-balance font-semibold mb-8">
           Pricing software which pays for itself 20x over
         </h2>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-screen-xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-screen-xl mx-auto">
           {subscriptionTiersInOrder.map(tier => (
             <PricingCard key={tier.name} {...tier} />
           ))}
         </div>
       </section>
-      <footer className="container pt-16 pb-8 flex flex-col sm:flex-row gap-8 sm:gap-4 justify-between items-start">
+      <footer className="container pt-16 pb-8 px-10 xl:px-0 flex flex-col sm:flex-row gap-8 sm:gap-4 justify-between items-start">
         <Link href="/">
           <BrandLogo />
         </Link>
